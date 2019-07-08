@@ -123,6 +123,13 @@
 		}
 	}
 
+	/* IE Style*/
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 480px) {
+		.games img{
+			width: 20%;
+		}
+	}
+
 	body.is-preload #portfolio {
 		-moz-transform: rotateX(15deg);
 		-webkit-transform: rotateX(15deg);
