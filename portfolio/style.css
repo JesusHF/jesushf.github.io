@@ -66,6 +66,7 @@
 
 		font-size: calc(0.5em + 0.5vw);
 		text-align: justify;
+		text-transform: none;
 	}
 
 	.game div{
