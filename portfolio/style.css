@@ -124,6 +124,12 @@
 		}
 	}
 
+	@media screen and (min-width: 2048px) {
+		#portfolio {
+			width: 55%;
+		}
+	}
+
 	/* IE Style*/
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 480px) {
 		.games img{
