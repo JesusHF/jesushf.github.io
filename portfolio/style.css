@@ -14,7 +14,7 @@
 		transition: opacity 1s ease, transform 1s ease;
 		padding: 4.5em 3em 3em 3em ;
 		background: #ffffff;
-		border-radius: 4px;
+		border-radius: 10px;
 		cursor: default;
 		max-width: 100%;
 		opacity: 0.95;
@@ -53,12 +53,9 @@
 		max-width: 252px;
 		min-width: 150px;
 
+		margin: 0;
 		border-radius: 30px;
-		margin: 1em 0;
-	}
-
-	.games img:hover{
-		opacity: 0.8;
+		transition: opacity 0.2s;
 	}
 
 	.games p{
@@ -71,7 +68,11 @@
 		text-align: justify;
 	}
 
-	.game div{
+	.games a{
+		text-decoration: underline;
+	}
+
+	.game > div{
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -90,18 +91,45 @@
 		-webkit-justify-content: flex-start;
 		-ms-justify-content: flex-start;
 		justify-content: flex-start;
-
 	}
 
+	.hover-info{
+		position: relative;
+	}
 
-	@media screen and (max-width: 768px) {
+	.hover-info p{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: white;
+		padding: 5px;
+		border-radius: 10px;
+		visibility: hidden;
+		transition: opacity 0.2s visibility 0.2s;
+	}
+
+	.hover-info a{
+		padding: 5px;
+	}
+
+	.hover-info:hover img
+	{
+		opacity: 0.5;
+	}
+
+	.hover-info:hover p{
+		visibility: visible;
+	}
+
+	@media screen and (max-width: 767px) {
 
 		#portfolio {
 			padding: 4em 2em 2.5em 2em ;
 			width: 100%;
 		}
 
-		.game div{
+		.game > div{
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -119,11 +147,19 @@
 			padding-top: 0.5em;
 			font-size: 1.25em;
 		}
-	}
+		
+		.hover-info p{
+			visibility: visible;
+			position: relative;
+			margin-top: 10px;
+			padding: 0;
+			text-align: center;
+			background-color: transparent;
+		}
 
-	@media screen and (min-width: 767px) {
-		.games img{
-			min-width: 252px;
+		.hover-info:hover img
+		{
+			opacity: 1;
 		}
 	}
 
@@ -157,7 +193,5 @@
 		-webkit-justify-content: flex-start;
 		-ms-justify-content: flex-start;
 		justify-content: flex-start;
-
-
 	}
 	*/
