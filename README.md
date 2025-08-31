@@ -11,8 +11,18 @@ This repository contains the source code for my personal portfolio website, show
 - Contact information
 
 ## 🛠️ Technologies
+### Frontend
+- React (v18.3.1)
+- TypeScript (v5.9.2)
+- React Router (v6.30.1)
+- Vite (v5.4.19)
 
-- HTML5
-- CSS3
-- JavaScript
+### UI & Styling
+- Tailwind CSS (v3.4.17)
+- Radix UI Components
+- Shadcn/ui (Component library)
+- Lucide React (Icons)
+
+### Deployment
 - GitHub Pages
+- gh-pages (Deployment tool)
