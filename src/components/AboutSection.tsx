@@ -55,7 +55,7 @@ export const AboutSection = () => {
                 <Button
                   variant="cyber"
                   className="group"
-                  onClick={() => window.open('https://jesushfdev.com/cv.pdf', '_blank')}
+                  onClick={() => window.open('cv.pdf', '_blank')}
                 >
                   <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                   Download Full CV

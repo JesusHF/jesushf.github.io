@@ -175,7 +175,7 @@ export const HeroSection = () => {
               variant="cyber" 
               size="lg" 
               className="group"
-              onClick={() => window.open('https://jesushfdev.com/cv.pdf', '_blank')}
+              onClick={() => window.open('/cv.pdf', '_blank')}
             >
               <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Download Resume
