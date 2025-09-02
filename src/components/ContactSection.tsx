@@ -17,7 +17,7 @@ export const ContactSection = () => {
     subject: "",
     honeypot: "", // Anti-spam field
     replyTo: "@", // This will set replyTo to the email provided
-    apiKey: import.meta.env.VITE_STATIC_FORMS_API_KEY || '',
+    apiKey: "sf_g4fl2ng7gb9n1i5ek89l4b4d",
     "g-recaptcha-response": "" // Will be filled programmatically
   });
 
@@ -277,7 +277,7 @@ export const ContactSection = () => {
                   {/* Invisible reCAPTCHA */}
                   <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''}
+                    sitekey="6LfpfrsrAAAAALgsF3mm2HbuO9vDqMdpfGHfQOny"
                     onChange={handleRecaptchaChange}
                     theme="dark"
                   />
