@@ -6,7 +6,7 @@ const experiences = [
   {
     company: "Poysky Productions",
     role: "Unity Developer",
-    duration: "03/2024 - 07/2025",
+    duration: "03/2024 - 09/2025",
     location: "Remote",
     description: "Lead Unity C# Developer on two unreleased projects, responsible for core gameplay systems and overall technical architecture. Implemented systems including an advanced Animation State Machine with attack combos, AI Behavior Trees, and farming mechanics.",
     technologies: ["Unity", "C#", "Git"],
@@ -74,8 +74,8 @@ export const ExperienceSection = () => {
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="bg-card border border-accent/20 hover:border-accent/40 transition-all duration-300 group hover:shadow-[0_8px_32px_rgba(0,255,255,0.1)]"
               >
                 <CardContent className="p-8">
@@ -86,11 +86,11 @@ export const ExperienceSection = () => {
                           {exp.role}
                         </h3>
                       </div>
-                      
+
                       <h4 className="text-xl font-semibold text-accent mb-3">
                         {exp.company}
                       </h4>
-                      
+
                       <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-muted-foreground mb-4">
                         <div className="flex items-center gap-2">
                           <Calendar className="w-4 h-4" />
@@ -116,9 +116,9 @@ export const ExperienceSection = () => {
                       </h5>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
-                          <Badge 
-                            key={tech} 
-                            variant="secondary" 
+                          <Badge
+                            key={tech}
+                            variant="secondary"
                             className="bg-secondary/50 border border-accent/20 hover:border-accent/40 transition-colors"
                           >
                             {tech}
