@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Download, Mail } from "lucide-react";
-import { SiGithub, SiLinkedin } from 'react-icons/si'
+import { Download } from "lucide-react";
+import profileImage from '@/assets/img/profile.jpg'
 
 export const HeroSection = () => {
   return (
@@ -145,18 +145,16 @@ export const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-slide-in-up">
+        <div className="max-w-5xl mx-auto text-center animate-slide-in-up">
           {/* Profile Avatar */}
           <div className="mb-8 mt-16">
             <div className="w-32 h-32 mx-auto rounded-full bg-secondary border-4 border-accent/30 shadow-[0_0_30px_rgba(0,255,255,0.3)] flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-muted flex items-center justify-center text-3xl font-bold text-accent">
-                JH
-              </div>
+                <img className="rounded-full" src={profileImage} alt="Profile Image" />
             </div>
           </div>
 
           {/* Hero Text */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-accent to-primary-glow bg-clip-text text-transparent leading-tight py-2">
+          <h1 className="text-5xl md:text-7xl font-bold mb-2 pb-2 bg-gradient-to-r from-foreground via-accent to-primary-glow bg-clip-text text-transparent leading-tight">
             Jesus Hernandez
           </h1>
           
